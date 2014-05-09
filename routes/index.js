@@ -107,4 +107,5 @@ function genHash(password) {
   return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 }
 
+// Export this module as a router() instance
 module.exports = router;

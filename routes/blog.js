@@ -131,12 +131,12 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 });
 
 var mailOptions = {
-    from: "Node Press <foo@blurdybloop.com>", // sender address
+    from: "Node Press <nodepress33@gmail.com>", // sender address
     to: "", // list of receivers
     subject: "New follower on Node Press", // Subject line
     text: "Hi, you have a new follower!", // plaintext body
     html: "<b>Hi, you have a new follower!</b>" // html body
 }
 
-
+// Export this module as a router() instance
 module.exports = router;
