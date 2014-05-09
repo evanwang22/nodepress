@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h3 {
+	text-align: center;
+}
+
+#new-post {
+	display: inline;
+}
+
+#follow {
+	display: inline;
+	margin-left: 20px;
+}
+
+#follow-input {
+	min-width: 200px;
+}
+
+.center {
+	margin:auto;
+	width:358px;
+}

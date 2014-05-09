@@ -1,0 +1,35 @@
+<div class="container">
+
+	<h3>Blog feed for <%= user %></h3>
+
+	<br>
+	<% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+
+	<div class="center">
+		<form action="blog/new_post" id="new-post">
+			<button>New Post</button>
+		</form>
+
+		<form method="post" action="blog/follow" id="follow">
+		  	<input type="text" placeholder="Email of blogger to follow" name="email" id="follow-input"></input>
+		  	<input type="submit" value="Follow">
+		</form>
+	</div>
+
+	<br>
+
+	<div class="col-sm-8 col-sm-offset-2">
+
+		<% for (var i = 0; i < posts.length; i++) { %>
+		  	<h4><%= posts[i].title %></h4>
+		  	<% if (posts[i].image) {%>
+		  		<img src="<%=/images/ + posts[i].image%>">
+		  	<% } %>
+		  	<p><%= posts[i].body %></p>
+		<% } %>
+
+	</div>
+
+</div>

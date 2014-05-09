@@ -1,0 +1,15 @@
+<div class="container">
+
+	<!-- show any messages that come back with authentication -->
+	<% if (message.length > 0) { %>
+		<div class="alert alert-info"><%= message %></div>
+	<% } %>
+
+  	<div class="jumbotron text-center">
+	    <h1>NodePress</h1>
+	    <p>Login or Register:</p>
+	    <a href="/login" class="btn btn-default">Login</a>
+	    <a href="/signup" class="btn btn-default">Signup</a>
+  	</div>
+</div>
+
