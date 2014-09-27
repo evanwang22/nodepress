@@ -51,6 +51,8 @@ app.use(function(req,res,next){
 var index = require('./routes/index');
 var blog = require('./routes/blog');
 
+console.log(typeof db.get('postcollection'));
+
 // Use module routes/index, a router() instance
 app.use('/', index);
 // Use module routes/blog, a router() instance
